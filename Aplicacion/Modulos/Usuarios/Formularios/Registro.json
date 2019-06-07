@@ -1,24 +1,11 @@
 {
   "nombre": "Gestion Usuarios",
   "identificador": "GestionUsuarios",
-  "query": "select nombre_usuario,clave_usuario,nombres,apellidos,correo,sexo,img_perfil from s_usuarios",
-  "clave_primaria": "id_usuario",
   "campos": [
     {
       "name": "nombres",
       "id": "nombres",
-      "label": "Nombres",
-      "eventos": [
-        "obligatorio"
-      ]
-    },
-    {
-      "name": "apellidos",
-      "id": "apellidos",
-      "label": "Apellidos",
-      "eventos": [
-        "obligatorio"
-      ]
+      "label": "Nombres"
     },
     {
       "name": "correo",
@@ -54,6 +41,11 @@
       "eventos": [
         "obligatorio"
       ]
+    },
+    {
+      "name": "apellidos",
+      "id": "apellidos",
+      "label": "Apellidos"
     }
   ]
 }
