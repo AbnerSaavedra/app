@@ -20,7 +20,7 @@ class Usuarios extends App{
 
         $this->data(['form' => $form->render()]);
 
-        if ($this->post('btnRegistro')) {
+        if ($this->post('btnGestionUsuarios')) {
             $this->procesarRegistro($form);
             return;
         }
@@ -34,7 +34,8 @@ class Usuarios extends App{
         }
 
         $usuario = new Usuario();
-        var_dump($usuario);
+        //var_dump($usuario);
+        $usuario->id_estatus = 1;
         if ($usuario->salvar($this->post())) {
 
         }

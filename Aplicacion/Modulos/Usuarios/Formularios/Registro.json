@@ -8,6 +8,11 @@
       "label": "Nombres"
     },
     {
+      "name": "apellidos",
+      "id": "apellidos",
+      "label": "Apellidos"
+    },
+    {
       "name": "correo",
       "type": "email",
       "id": "correo",
@@ -18,7 +23,7 @@
       "type": "select",
       "id": "sexo",
       "label": "Sexo",
-      "opciones": "M=Masculino;F=Femenino"
+      "opciones": "1=Masculino;2=Femenino"
     },
     {
       "name": "usuario",
@@ -27,25 +32,24 @@
       "label": "Nombre de usuario"
     },
     {
-      "name": "clave_usuario",
-      "id": "clave_usuario",
+      "name": "clave",
+      "id": "clave",
       "label": "Clave",
-      "eventos": [
-        "obligatorio"
-      ]
+      "eventos": {
+        "obligatorio": {
+          "mensaje": "La clave es obligatoria"
+        }
+      }
     },
     {
       "name": "clave_usuario_2",
       "id": "clave_usuario_2",
       "label": "Clave",
-      "eventos": [
-        "obligatorio"
-      ]
-    },
-    {
-      "name": "apellidos",
-      "id": "apellidos",
-      "label": "Apellidos"
+      "eventos": {
+        "obligatorio": {
+          "mensaje": "La clave es obligatoria"
+        }
+      }
     }
   ]
 }

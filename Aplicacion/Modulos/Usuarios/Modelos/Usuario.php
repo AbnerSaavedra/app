@@ -11,12 +11,13 @@ use Jida\Core\Modelo;
 class Usuario extends Modelo{
 
     public $id_usuario;
-    public $nombre_usuario;
-    public $clave_usuario;
+    public $usuario;
+    public $clave;
     public $nombres;
     public $apellidos;
     public $correo;
     public $sexo;
+    public $id_estatus;
 
     protected $tablaBD = "s_usuarios";
     protected $pk = "id_usuario";
